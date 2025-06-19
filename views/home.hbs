@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>{{title}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f9fc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .buttons {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        a.button {
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            background-color: #0070f3;
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        a.button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>{{message}}</h1>
+
+    <div class="buttons">
+        <a href="/register" class="button">Form đăng ký</a>
+        {{!-- <a href="/product" class="button">View Product</a> --}}
+        {{!-- <a href="/auth/login" class="button">Trang đăng nhập</a> --}}
+
+    </div>
+</body>
+
+</html>
